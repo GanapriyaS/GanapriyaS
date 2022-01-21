@@ -1115,3 +1115,9 @@ button {
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
 }
+
+#canvas5 {
+  background: url("../../assets/img/background.jpg");
+
+  background-size: contain;
+}

@@ -151,6 +151,9 @@ let frames = {
   idle: [1, 2, 3, 4, 5, 6, 7, 8],
   kick: [1, 2, 3, 4, 5, 6, 7],
   punch: [1, 2, 3, 4, 5, 6, 7],
+  block: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  forward: [1, 2, 3, 4, 5, 6],
+  backward: [1, 2, 3, 4, 5, 6],
 };
 
 let loadImages1 = (callback) => {
@@ -158,22 +161,27 @@ let loadImages1 = (callback) => {
     idle: [],
     kick: [],
     punch: [],
+    backward: [],
+    forward: [],
+    block: [],
   };
   let count = 0;
-  ["kick", "idle", "punch"].forEach((animation) => {
-    let animFrame = frames[animation];
-    count += animFrame.length;
+  ["kick", "idle", "punch", "forward", "backward", "block"].forEach(
+    (animation) => {
+      let animFrame = frames[animation];
+      count += animFrame.length;
 
-    animFrame.forEach((item) => {
-      callbackFun(imageno(item, animation), (img) => {
-        images[animation][item - 1] = img;
-        count -= count;
-        if (count === 0) {
-          callback(images);
-        }
+      animFrame.forEach((item) => {
+        callbackFun(imageno(item, animation), (img) => {
+          images[animation][item - 1] = img;
+          count -= count;
+          if (count === 0) {
+            callback(images);
+          }
+        });
       });
-    });
-  });
+    }
+  );
 };
 
 let animate1 = (ctx4, images, animation, callback) => {
@@ -183,7 +191,7 @@ let animate1 = (ctx4, images, animation, callback) => {
       ctx4.drawImage(item, 0, 0, 300, 160);
     }, index * 200);
   });
-  setTimeout(callback, images[animation].length * 200);
+  setTimeout(callback, images[animation].length * 300);
 };
 
 loadImages1((images) => {
@@ -223,9 +231,21 @@ loadImages1((images) => {
   document.getElementById("punch1").onclick = () => {
     queue.push("punch");
   };
+  document.getElementById("forward").onclick = () => {
+    queue.push("forward");
+  };
+  document.getElementById("backward").onclick = () => {
+    queue.push("backward");
+  };
+  document.getElementById("block").onclick = () => {
+    queue.push("block");
+  };
   document.addEventListener("keydown", function (event) {
     const key = event.key;
     if (key === "ArrowRight") queue.push("kick");
-    if (key === "ArrowLeft") queue.push("punch"); // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
+    if (key === "ArrowLeft") queue.push("punch");
+    if (key === "ArrowUp") queue.push("forward");
+    if (key === "ArrowDown") queue.push("backward");
+    if (key === "Enter") queue.push("block"); // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
   });
 });

@@ -59,8 +59,6 @@ function Canvas() {
               <canvas
                 id="canvas"
                 style={{
-                  width: "500px",
-                  height: "500px",
                   border: "2px saddlebrown solid",
                 }}
               ></canvas>
@@ -71,8 +69,6 @@ function Canvas() {
               <canvas
                 id="canvas1"
                 style={{
-                  width: "500px",
-                  height: "500px",
                   border: "2px rgb(113, 139, 19) solid",
                 }}
               ></canvas>
@@ -83,8 +79,6 @@ function Canvas() {
               <canvas
                 id="canvas2"
                 style={{
-                  width: "500px",
-                  height: "500px",
                   border: "2px rgb(255, 218, 5) solid",
                 }}
               ></canvas>
@@ -95,8 +89,6 @@ function Canvas() {
               <canvas
                 id="canvas3"
                 style={{
-                  width: "500px",
-                  height: "500px",
                   border: "2px rgb(139, 19, 129) solid",
                 }}
               ></canvas>
@@ -106,11 +98,12 @@ function Canvas() {
               <canvas
                 id="canvas4"
                 style={{
-                  width: "500px",
-                  height: "500px",
+                  background: "orange",
+
                   border: "2px rgb(247, 0, 255) solid",
                 }}
               ></canvas>
+              <br></br>
               <button
                 id="kick"
                 style={{
@@ -138,11 +131,10 @@ function Canvas() {
               <canvas
                 id="canvas5"
                 style={{
-                  width: "500px",
-                  height: "500px",
                   border: "2px rgb(72, 255, 16) solid",
                 }}
               ></canvas>
+              <br></br>
               <button
                 id="kick1"
                 style={{
@@ -162,6 +154,37 @@ function Canvas() {
                 }}
               >
                 Punch(Left Arrow)
+              </button>
+              <button
+                id="forward"
+                style={{
+                  border: "2px yellow solid",
+                  background: "transparent",
+                  color: "white",
+                }}
+              >
+                Forward(Up Arrow)
+              </button>
+              <button
+                id="backward"
+                style={{
+                  border: "2px yellow solid",
+                  background: "transparent",
+                  color: "white",
+                }}
+              >
+                Backward(Down Arrow)
+              </button>
+
+              <button
+                id="block"
+                style={{
+                  border: "2px yellow solid",
+                  background: "transparent",
+                  color: "white",
+                }}
+              >
+                Block(Enter key)
               </button>
             </Grid>
           </Grid>
