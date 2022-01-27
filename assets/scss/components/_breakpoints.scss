@@ -310,7 +310,6 @@
       .bill {
         width: 77%;
         padding: 1rem;
-        font-size: var(--smaller-font-size);
       }
       &-right {
         text-align: right;
@@ -322,6 +321,18 @@
       &-right {
         float: right;
       }
+    }
+
+    .coding-container,
+    .bill-container,
+    .blogging-container,
+    .ysclub-container,
+    .career-container,
+    .notepad-container,
+    .todo-container,
+    .progress-container {
+      font-weight: normal;
+      background: transparent;
     }
   }
 

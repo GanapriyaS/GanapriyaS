@@ -484,7 +484,7 @@ button {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--title-color);
-  padding: 1rem 1.75rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
   transition: 0.3s;
@@ -606,7 +606,9 @@ button {
 }
 
 .project__container {
-  background: var(--container-color);
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-size: 100% 100%;
   border-radius: 0.5rem;
   padding: 1rem;
   overflow: hidden;
@@ -625,6 +627,7 @@ button {
 }
 .project__description {
   padding: 1rem 0px;
+  color: var(--title-color);
 }
 .project__description span {
   display: block;
@@ -653,11 +656,9 @@ button {
   display: none;
 }
 .project__data .carreer,
-.project__data .ysclub {
-  font-size: var(--small-font-size);
-}
+.project__data .ysclub,
 .project__data .bill {
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
 }
 .project__social {
   float: right;
@@ -700,7 +701,36 @@ button {
   color: var(--title-color);
 }
 .project .bill-container {
-  padding: 0.5rem;
+  font-weight: 600;
+  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/billing.jpg);
+}
+.project .ysclub-container {
+  font-weight: 600;
+  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.836), rgba(73, 73, 73, 0.589)), url(../img/projects/ysclub.jpg);
+}
+.project .blogging-container {
+  font-weight: 600;
+  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/blogging.jpg);
+}
+.project .progress-container {
+  font-weight: 600;
+  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/progress.jpg);
+}
+.project .todo-container {
+  font-weight: 600;
+  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/todo.jpg);
+}
+.project .notepad-container {
+  font-weight: 600;
+  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/notepad.jpg);
+}
+.project .career-container {
+  font-weight: 600;
+  background-image: linear-gradient(to right, #3f3f3f, rgba(73, 73, 73, 0.842)), url(../img/projects/career.jpg);
+}
+.project .coding-container {
+  font-weight: 600;
+  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/coding.jpg);
 }
 
 /*=============== WORK ===============*/
@@ -1198,7 +1228,6 @@ button {
   .project__data .bill {
     width: 77%;
     padding: 1rem;
-    font-size: var(--smaller-font-size);
   }
   .project__data-right {
     text-align: right;
@@ -1208,6 +1237,17 @@ button {
   }
   .project__social-right {
     float: right;
+  }
+  .project .coding-container,
+.project .bill-container,
+.project .blogging-container,
+.project .ysclub-container,
+.project .career-container,
+.project .notepad-container,
+.project .todo-container,
+.project .progress-container {
+    font-weight: normal;
+    background: transparent;
   }
 
   .right {
