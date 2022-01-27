@@ -1,0 +1,113 @@
+.project {
+  &__container {
+    background: var(--container-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow: hidden;
+    min-height: 68vh;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    .bill-img:hover {
+      z-index: 700;
+    }
+  }
+
+  &__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+  }
+
+  &__description {
+    padding: 1rem 0px;
+    span {
+      display: block;
+      font-size: var(--smaller-font-size);
+      margin-top: var(--mb-0-5);
+      word-spacing: 0.6rem;
+    }
+    li {
+      padding-left: 1em;
+      text-indent: -1em;
+      text-align: left;
+      &::before {
+        content: "◉";
+        padding-right: 8px;
+        color: var(--title-color);
+      }
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin-top: var(--mb-0-5);
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-0-5);
+    word-spacing: 0.6rem;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__data {
+    .carreer,
+    .ysclub {
+      font-size: var(--small-font-size);
+    }
+    .bill {
+      font-size: var(--smaller-font-size);
+    }
+  }
+
+  &__social {
+    float: right;
+    &-link {
+      display: inline-flex;
+      padding: 0.25rem;
+      font-size: var(--normal-font-size);
+      color: var(--title-color);
+    }
+  }
+
+  &__box {
+    &-skill {
+      display: block;
+      margin-top: var(--mb-0-5);
+      font-size: var(--smaller-font-size);
+      margin-bottom: var(--mb-0-5);
+      word-spacing: 0.6rem;
+    }
+
+    &__social {
+      position: absolute;
+      bottom: 0;
+      right: 5px;
+      &-link {
+        display: inline-flex;
+        padding: 0.25rem;
+        font-size: var(--normal-font-size);
+        color: var(--title-color);
+      }
+    }
+
+    &-bill {
+      font-size: var(--smaller-font-size);
+    }
+
+    li {
+      padding-left: 1em;
+      text-indent: -1em;
+      text-align: left;
+      &::before {
+        content: "◉";
+        padding-right: 8px;
+        color: var(--title-color);
+      }
+    }
+  }
+  .bill-container {
+    padding: 0.5rem;
+  }
+}

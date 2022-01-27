@@ -1,0 +1,31 @@
+{
+  "name": "ganapriya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "n": "^7.5.0",
+    "n8n": "^0.141.1",
+    "npx": "^10.2.2",
+    "sass": "^1.49.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "scss": "sass --watch assets/scss/styles.scss assets/css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GanapriyaS/GanapriyaS.git"
+  },
+  "author": "GanapriyaS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GanapriyaS/GanapriyaS/issues"
+  },
+  "homepage": "https://github.com/GanapriyaS/GanapriyaS#readme"
+}
