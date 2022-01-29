@@ -144,7 +144,7 @@ button {
 }
 
 .bullet li::before {
-  content: "◉";
+  content: "➲";
   padding-right: 8px;
   color: var(--title-color);
 }
@@ -733,21 +733,61 @@ button {
   background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/coding.jpg);
 }
 
-/*=============== WORK ===============*/
-.work__container {
-  row-gap: 2rem;
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume {
+  display: flex;
+  flex-wrap: wrap;
 }
-.work__description {
-  margin-bottom: var(--mb-2);
+.resume-title {
+  font-size: 26px;
+  font-weight: var(--font-semi-bold);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
 }
-.work__description ul {
-  background: #474747;
-  border-radius: 0.5rem;
-  padding: 1.5rem;
+.resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(248, 248, 248, 0.336);
+  position: relative;
 }
-.work__description ul li {
-  padding-bottom: 1rem;
-  font-size: var(--normal-font-size);
+.resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--first-color);
+  margin-bottom: 10px;
+}
+.resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume-item ul {
+  padding-left: 20px;
+}
+.resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume-item:last-child {
+  padding-bottom: 0;
+}
+.resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -11px;
+  top: 0;
+  background: var(--first-color);
+  border: 2px solid var(--first-color);
 }
 
 /*=============== NEWSLETTER ===============*/
@@ -985,8 +1025,7 @@ button {
 }
 /* For medium devices */
 @media screen and (min-width: 576px) {
-  .about__container,
-.work__container {
+  .about__container {
     grid-template-columns: 1fr;
     justify-content: center;
   }
@@ -1063,17 +1102,6 @@ button {
     width: 250px;
   }
 
-  .work__container {
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-  }
-  .work__data {
-    text-align: initial;
-  }
-  .work__img {
-    width: 250px;
-  }
-
   .skill__container {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
@@ -1095,6 +1123,11 @@ button {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 
   .section__title {
@@ -1138,13 +1171,6 @@ button {
     width: 350px;
   }
   .about__description {
-    padding-right: 2rem;
-  }
-
-  .work__container {
-    column-gap: 1rem;
-  }
-  .work__description {
     padding-right: 2rem;
   }
 
