@@ -253,7 +253,8 @@
     &__description {
       position: absolute;
       background: rgb(71, 71, 71);
-      /* background: var(--container-color); */
+
+      // background: var(--container-color);
       border-radius: 0.5rem;
       padding: 1.5rem;
       text-align: center;
@@ -279,15 +280,22 @@
     }
     &__data {
       text-align: initial;
-      .coding-club {
-        padding-top: 10rem;
-      }
+
       .carreer {
         padding: 1rem;
         font-size: var(--small-font-size);
       }
+      .ysclub {
+        padding: 1rem;
+        font-size: var(--normal-font-size);
+      }
+      .notepad {
+        padding: 1rem;
+      }
+
       .bill {
-        width: 77%;
+        font-size: var(--small-font-size);
+        width: 58%;
         padding: 1rem;
       }
       &-right {

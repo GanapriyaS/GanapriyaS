@@ -658,7 +658,13 @@ button {
 .project__data .carreer,
 .project__data .ysclub,
 .project__data .bill {
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
+}
+.project__data .notepad {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 .project__social {
   float: right;
@@ -1218,7 +1224,6 @@ button {
   .project__description {
     position: absolute;
     background: #474747;
-    /* background: var(--container-color); */
     border-radius: 0.5rem;
     padding: 1.5rem;
     text-align: center;
@@ -1244,15 +1249,20 @@ button {
   .project__data {
     text-align: initial;
   }
-  .project__data .coding-club {
-    padding-top: 10rem;
-  }
   .project__data .carreer {
     padding: 1rem;
     font-size: var(--small-font-size);
   }
+  .project__data .ysclub {
+    padding: 1rem;
+    font-size: var(--normal-font-size);
+  }
+  .project__data .notepad {
+    padding: 1rem;
+  }
   .project__data .bill {
-    width: 77%;
+    font-size: var(--small-font-size);
+    width: 58%;
     padding: 1rem;
   }
   .project__data-right {

@@ -24,6 +24,7 @@
   &__description {
     padding: 1rem 0px;
     color: var(--title-color);
+
     span {
       display: block;
       font-size: var(--smaller-font-size);
@@ -58,7 +59,13 @@
     .carreer,
     .ysclub,
     .bill {
-      font-size: var(--small-font-size);
+      font-size: var(--smaller-font-size);
+    }
+    .notepad {
+      text-align: center;
+      display: grid;
+      justify-content: center;
+      align-items: center;
     }
   }
 
