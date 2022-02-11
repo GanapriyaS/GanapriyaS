@@ -75,7 +75,7 @@
 
   .home {
     &__content {
-      height: 90vh;
+      height: 80vh;
       margin-top: var(--header-height);
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
@@ -247,7 +247,10 @@
       margin-bottom: var(--mb-1);
     }
     &__subtitle {
-      padding-top: 14rem;
+      padding-top: 12.5rem;
+    }
+    &__caption {
+      text-align: left;
     }
 
     &__description {
@@ -280,6 +283,15 @@
     }
     &__data {
       text-align: initial;
+      .coding-club {
+        padding-top: 9rem;
+      }
+      .todo {
+        padding-top: 11rem;
+      }
+      .bill-sub {
+        padding-top: 14rem;
+      }
 
       .carreer {
         padding: 1rem;
@@ -287,15 +299,17 @@
       }
       .ysclub {
         padding: 1rem;
-        font-size: var(--normal-font-size);
+        width: 58%;
+        font-size: var(--small-font-size);
       }
       .notepad {
+        font-size: var(--small-font-size);
         padding: 1rem;
       }
 
       .bill {
         font-size: var(--small-font-size);
-        width: 58%;
+        width: 65%;
         padding: 1rem;
       }
       &-right {

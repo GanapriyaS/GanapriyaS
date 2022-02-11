@@ -325,6 +325,7 @@ button {
   margin-bottom: var(--mb-1);
 }
 .home__description {
+  font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
 .home__buttons {
@@ -652,6 +653,12 @@ button {
   margin-bottom: var(--mb-0-5);
   word-spacing: 0.6rem;
 }
+.project__caption {
+  display: block;
+  font-size: var(--small-font-size);
+  text-align: center;
+  margin-bottom: var(--mb-1);
+}
 .project__img {
   display: none;
 }
@@ -724,7 +731,7 @@ button {
 }
 .project .todo-container {
   font-weight: 600;
-  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/todo.jpg);
+  background-image: linear-gradient(to right, rgba(63, 63, 63, 0.925), rgba(73, 73, 73, 0.685)), url(../img/projects/todo.png);
 }
 .project .notepad-container {
   font-weight: 600;
@@ -1070,7 +1077,7 @@ button {
   }
 
   .home__content {
-    height: 90vh;
+    height: 80vh;
     margin-top: var(--header-height);
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -1219,7 +1226,10 @@ button {
     margin-bottom: var(--mb-1);
   }
   .project__subtitle {
-    padding-top: 14rem;
+    padding-top: 12.5rem;
+  }
+  .project__caption {
+    text-align: left;
   }
   .project__description {
     position: absolute;
@@ -1249,20 +1259,31 @@ button {
   .project__data {
     text-align: initial;
   }
+  .project__data .coding-club {
+    padding-top: 9rem;
+  }
+  .project__data .todo {
+    padding-top: 11rem;
+  }
+  .project__data .bill-sub {
+    padding-top: 14rem;
+  }
   .project__data .carreer {
     padding: 1rem;
     font-size: var(--small-font-size);
   }
   .project__data .ysclub {
     padding: 1rem;
-    font-size: var(--normal-font-size);
+    width: 58%;
+    font-size: var(--small-font-size);
   }
   .project__data .notepad {
+    font-size: var(--small-font-size);
     padding: 1rem;
   }
   .project__data .bill {
     font-size: var(--small-font-size);
-    width: 58%;
+    width: 65%;
     padding: 1rem;
   }
   .project__data-right {
