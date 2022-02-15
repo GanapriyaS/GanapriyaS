@@ -54,21 +54,24 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#project" class="nav__link">Projects</a>
+                        <a href="#experience" class="nav__link">Data Engineering Experience</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
+                        <a href="#project" class="nav__link">Other Relavent Projects</a>
                     </li>
 
-                    <a href="#" class="button button--ghost">Resume</a>
+                    <li class="nav__item ">
+                        <a href="#contact" class="nav__link nav__last">Contact</a>
+                    </li>
+
                 </ul>
 
                 <div class="nav__close" id="nav-close">
                     <i class='bx bx-x'></i>
                 </div>
 
-                <!-- <img src="assets/img/nav-img.png" alt="" class="nav__img"> -->
+                <img src="assets/img/logo.svg" alt="" class="nav__img">
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -169,11 +172,11 @@
             <div class="about__container container grid">
                 <div class="about__data">
                     <h2 class="section__title about__title">About Me</h2>
-                    <p class="about__description">Backend Engineer with strong skills at setting data pipelines,
-                        running, monitoring, and scheduling tasks and workflows, and creating
-                        orchestration at the best level.
+                    <p class="about__description"><i class='bx bxs-quote-left'></i>
+                        Backend Engineer with strong skills at setting, running, monitoring, and orchestrating data
+                        pipelines. <i class='bx bxs-quote-right'></i>
                     </p>
-                    <a href="#resume" class="button">Know more</a>
+                    <a href="#experience" class="button">More on Data Engineering Experience</a>
                 </div>
 
                 <div class="skill">
@@ -227,6 +230,41 @@
             </div>
         </section>
 
+
+        <!--==================== EXPERIENCE ====================-->
+        <section class="section " id="experience">
+            <h2 class="section__title">Data Engineering Experience</h2>
+            <div class="resume container" >
+                <div class="resume-item">
+                    <span class="resume__skill">Airflow Perfect SQL Docker Streamlit GoogleCloud (Cloudrun, Cloudbuild,
+                        AppScript, Composer, VirtualMachines)</span>
+                    <ul class="bullet">
+                        <li>Worked as a Data Engineering Intern at Krayen, a Data Analytics Startup.</li>
+                        <li>Created APIs using <b>Fastapi</b> and <b>Fivetran</b> to pull reference and transactional
+                            data from
+                            <b>Shopify</b>. The APIs were deployed on
+                            <b>Cloud Run</b> with the deployment handled by <b>Cloud Build</b>. Pipelines were built
+                            using
+                            <b>Google Composer</b> with the Shopify data
+                            being fed into ML Algorithms for further analysis.
+                        </li>
+                        <li>Orchestrated data stacks by setting up, running, scheduling and monitoring data pipelines
+                            using
+                            <b>Airflow</b> and <b>Prefect</b>.
+                        </li>
+                        <li>Integrated Google Sheets with <b>Google Analytics</b> and <b>Facebook</b> to pull transactional data using
+                            Google
+                            <b>AppScript</b> and APIs.
+                            This data was further consumed by Data Analysts and Marketing Teams.</li>
+
+                    </ul>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
         <!--=================== PROJECTS ======================= -->
         <section class="section project" id="project">
             <h2 class="section__title ">Projects</h2>
@@ -239,20 +277,18 @@
 
                                 <div class="project__data">
                                     <h2 class="project__title">Career Guidance</h2>
-                                    <p class="project__caption">A career guidance website with a strong emphasis on
-                                        service</p>
+                                    <p class="project__caption">Developed a web app for a Career Guidance Startup</p>
+
                                     <a href="assets/img/projects/career_guidance.mp4" class="glightbox3"
                                         data-glightbox="title: Career Guidance; description: .project__box1; descPosition: right;">
 
-                                        <ul class="project__description carreer">
-
-                                            <li>Have a feature of user registration and login</li>
-                                            <li>Dynamic blogs using Medium API within a website</li>
-                                            <li>Users can register for guidance and provide their feedback as well</li>
-                                            <li>Have tables for a better visual representation of the data with
-                                                filtering and sorting options</li>
-                                            <li>Have an admin page for user management and dynamic uploads of career
-                                                guidance videos</li>
+                                        <ul class="project__description career">
+                                            <h4>KEY FEATURES</h4>
+                                            <li>User Registration, Guidance and Feedback</li>
+                                            <li>Dynamic Blog Integration using Medium API</li>
+                                            <li>Data Visualization using various filtering options</li>
+                                            <li>Admin page for user management and career
+                                                guidance videos uploads</li>
                                         </ul>
                                     </a>
                                     <span class="project__subtitle">React Express.js ReactStrap MySQL API
@@ -279,13 +315,11 @@
                                     <p class="project__caption">A career guidance website with a strong emphasis on
                                         service</p>
                                     <ul class=" project__box">
-                                        <li>Have a feature of user registration and login</li>
-                                        <li>Dynamic blogs using Medium API within a website</li>
-                                        <li>Users can register for guidance and provide their feedback as well</li>
-                                        <li>Have tables for a better visual representation of the data with
-                                            filtering and sorting options</li>
-                                        <li>Have an admin page for user management and dynamic uploads of career
-                                            guidance videos</li>
+                                        <li>User Registration, Guidance and Feedback</li>
+                                        <li>Dynamic Blog Integration using Medium API</li>
+                                        <li>Data Visualization using various filtering options</li>
+                                        <li>Admin page for user management and career
+                                            guidance videos uploads</li>
                                     </ul>
                                     <span class="project__box-skill">React Express.js ReactStrap MySQL </span>
                                     <div class="project__box__social">
@@ -780,101 +814,7 @@
         </section>
 
 
-        <!--==================== DISCOUNT ====================-->
-        <section class="section">
-            <h2 class="section__title">Resume</h2>
-            <div class="resume container" id="resume">
 
-
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Summary</h3>
-                    <div class="resume-item pb-0">
-                        <h4>Ganapriya S</h4>
-
-                        <ul class="bullet">
-                            <li>B.E Computer Science and Engineering</li>
-                            <li>Government College of Technology, Coimbatore</li>
-                            <li>Mobile: +91 9123574078</li>
-                            <li>Email: ganapriyakheersagar@gmail.com</li>
-                        </ul>
-                        </p>
-                    </div>
-
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>B.E - Computer Science and Engineering</h4>
-                        <h5>2019 - 2023</h5>
-                        <p><em>Government College of Technology, Coimbatore</em></p>
-
-                    </div>
-                    <div class="resume-item">
-                        <h4>Higher Secondary (XII)</h4>
-                        <h5>2017 - 2019</h5>
-                        <p><em>Sri Vijay Vidyalaya, Hosur</em></p>
-                        <p>Percentage: 93.8%</p>
-                    </div>
-
-
-                    <div class="resume-item">
-                        <h4>Secondary (X)</h4>
-                        <h5>2016 - 2017</h5>
-                        <p><em>Sri Vijay Vidyalaya, Hosur</em></p>
-                        <p>Percentage: 98.4%</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>Data Science Intern</h4>
-                        <h5>Apr 2021 - present</h5>
-                        <p><em>Krayen - Data Analytics Company</em></p>
-                        <p><br>
-                        <ul class="bullet">
-                            <li>Automated Google Analytics and Facebook data with Google AppScript to Google Sheets by
-                                using
-                                APIs</li>
-                            <li>Likewise, orchestrated data stacks by setting up data pipelines, running, scheduling
-                                tasks,
-                                and monitoring workflows
-                                with the help of Airflow and Prefect.</li>
-                            <li>Deployed projects in serverless platform cloud run using docker, continuous integration
-                                with
-                                cloud build and scheduled
-                                DAGs in Google Composer.</li>
-                            <li>Created APIs using Fastapi for data integration with Fivetran from Shopify for further
-                                data
-                                analytics.
-                            </li>
-                            <li>Worked in virtual machines and hosted websites in the cloud Heroku and VMs.</li>
-                            <li>Furthermore, I used streamlit for deploying python models and scripts and worked in
-                                relational and cloud databases such
-                                as PostgreSQL and MySQL.</li>
-
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>College Activities</h4>
-                        <h5>2019 - present</h5>
-
-                        <p>
-                        <ul class="bullet">
-                            <li>Designed websites for college clubs and startups with front-end(React) and
-                                backend(Express.js, Django) and maintained
-                                websites for the past year.</li>
-                            <li>Built Desktop applications with Java Swing, Applet and designed billing software for
-                                shopping malls with JDBC as a
-                                college project and designed a progress tracker application with Spring Boot Rest API.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- <a href="#" class="button">Know more</a> -->
-            </div>
-        </section>
         <!--==================== CATEGORY ====================-->
         <section class="section category">
             <h2 class="section__title">Favorite Repositories</h2>

@@ -101,7 +101,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home-swiper, .newsletter__container,.work__container,.category__container,.project__lg`
+  `.home-swiper,.resume, .newsletter__container,.work__container,.category__container,.project__lg`
 );
 sr.reveal(`  .footer__content`, {
   interval: 100,

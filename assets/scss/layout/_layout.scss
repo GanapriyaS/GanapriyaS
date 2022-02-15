@@ -30,7 +30,7 @@
   text-align: left;
 }
 .bullet li::before {
-  content: "➲";
+  content: "●";
   padding-right: 8px;
   color: var(--title-color);
 }

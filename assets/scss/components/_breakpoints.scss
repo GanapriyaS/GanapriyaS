@@ -26,7 +26,6 @@
     justify-content: center;
   }
 }
-
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .about__container {
@@ -62,14 +61,21 @@
     &__toggle {
       display: none;
     }
-
     &__list {
       flex-direction: row;
-      column-gap: 3rem;
+      // column-gap: 3rem;
     }
+
     &__link {
+      border-right: 1px var(--text-color-light) solid;
+      padding-right: 1.5vw;
+      padding-left: 1.5vw;
       text-transform: initial;
       font-weight: initial;
+    }
+    &__last {
+      padding-right: 0px;
+      border-right: none;
     }
   }
 
@@ -112,7 +118,7 @@
     }
     &__title,
     &__data {
-      text-align: initial;
+      text-align: center;
     }
     &__img {
       width: 250px;
@@ -192,13 +198,10 @@
 
   .about {
     &__container {
-      column-gap: 1rem;
+      column-gap: 3rem;
     }
     &__img {
       width: 350px;
-    }
-    &__description {
-      padding-right: 2rem;
     }
   }
 
@@ -293,10 +296,6 @@
         padding-top: 14rem;
       }
 
-      .carreer {
-        padding: 1rem;
-        font-size: var(--small-font-size);
-      }
       .ysclub {
         padding: 1rem;
         width: 58%;
@@ -310,6 +309,9 @@
       .bill {
         font-size: var(--small-font-size);
         width: 65%;
+        padding: 1rem;
+      }
+      .career {
         padding: 1rem;
       }
       &-right {
