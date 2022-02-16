@@ -30,6 +30,7 @@
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 2rem;
+  --h1-5-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
@@ -117,7 +118,7 @@ button {
   padding: 4.5rem 0 2rem;
 }
 .section__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--h1-5-font-size);
   margin-bottom: var(--mb-2);
   text-align: center;
 }
