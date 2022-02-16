@@ -587,6 +587,9 @@ button {
   margin-bottom: var(--mb-0-5);
   word-spacing: 0.6rem;
 }
+.skill__subtitle span {
+  word-spacing: initial;
+}
 .skill__title, .skill__price {
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -766,6 +769,8 @@ button {
   text-align: center;
   font-size: var(--smaller-font-size);
   margin-bottom: var(--mb-1);
+}
+.resume__skill span {
   word-spacing: 0.6rem;
 }
 .resume-item {

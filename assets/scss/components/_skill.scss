@@ -35,6 +35,9 @@
     font-size: var(--smaller-font-size);
     margin-bottom: var(--mb-0-5);
     word-spacing: 0.6rem;
+    span {
+      word-spacing: initial;
+    }
   }
   &__title,
   &__price {
