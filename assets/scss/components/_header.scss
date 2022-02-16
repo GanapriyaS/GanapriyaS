@@ -70,8 +70,7 @@
     row-gap: 1.5rem;
   }
   &__link {
-    text-transform: uppercase;
-    font-weight: var(--font-black);
+    font-weight: var(--font-medium);
     transition: 0.4s;
 
     &:hover {

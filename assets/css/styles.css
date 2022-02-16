@@ -250,8 +250,7 @@ button {
   row-gap: 1.5rem;
 }
 .nav__link {
-  text-transform: uppercase;
-  font-weight: var(--font-black);
+  font-weight: var(--font-medium);
   transition: 0.4s;
 }
 .nav__link:hover {
@@ -316,7 +315,6 @@ button {
 }
 .home__subtitle {
   font-size: var(--h2-font-size);
-  text-transform: uppercase;
   margin-bottom: var(--mb-1);
 }
 .home__title {
