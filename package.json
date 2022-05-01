@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "n": "^7.5.0",
-    "n8n": "^0.141.1",
-    "npx": "^10.2.2",
-    "sass": "^1.49.0"
+    "sass": "^1.51.0"
   },
   "devDependencies": {
     "lite-server": "^2.6.1"

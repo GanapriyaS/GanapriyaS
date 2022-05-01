@@ -230,6 +230,12 @@
     }
   }
 
+  .category {
+    &__lg {
+      padding: 0px 6.5rem;
+    }
+  }
+
   .project {
     &__container {
       display: grid;
